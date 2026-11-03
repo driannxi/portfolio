@@ -144,7 +144,7 @@ export default function HeroSection() {
 
           <li>
             <a
-              href="mailto:ardianditya@gmail.com"
+              href="https://docs.google.com/document/d/1KQB6QUbR92ykpj9UAWt0lvwgEmoOuMmf8088nQTS_tE/edit?usp=sharing"
               className="flex items-center gap-[0.75em] w-[13.3em] h-[3.08em] px-[1.2em] rounded-full bg-white text-[0.93em] font-medium text-[var(--ink)] shadow-[0_6px_24px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.03)] hover:-translate-x-1 active:scale-95 transition-transform duration-200"
             >
               <svg

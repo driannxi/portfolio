@@ -45,7 +45,7 @@ export default function ContactSection() {
 
           {/* Email Pill */}
           <a
-            href="mailto:ardianditya15@gmail.com"
+            href="https://docs.google.com/document/d/1KQB6QUbR92ykpj9UAWt0lvwgEmoOuMmf8088nQTS_tE/edit?usp=sharing"
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-black/10 shadow-sm hover:shadow-md hover:border-black/20 hover:-translate-y-0.5 active:scale-95 transition-all text-xs sm:text-sm font-semibold text-zinc-900"
           >
             <svg
@@ -96,7 +96,7 @@ export default function ContactSection() {
 
           {/* Resume Pill */}
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1aoSQZSuq4s1BXGd1Pm3InGOqJKeUYGuD/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white border border-black/10 shadow-sm hover:shadow-md hover:border-black/20 hover:-translate-y-0.5 active:scale-95 transition-all text-xs sm:text-sm font-semibold text-zinc-900"
