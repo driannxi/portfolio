@@ -42,6 +42,7 @@ export const experiencesData = [
       'Developed server-side Web Services & RESTful APIs using Node.js and Express.js, integrated with PostgreSQL databases, JWT authentication, and data validation middleware.',
       'Engaged in 70+ hours of professional soft skills development, business English presentation, and financial literacy workshops conducted by industry experts.'
     ],
+    programUrl: 'https://www.dbs.com/spark/index/id_id/site/codingcamp/index.html',
     gallery: [
       { src: ccCertificate, caption: 'Program Completion Certificate' },
       { src: ccTech4, caption: 'Technical Milestone & Architecture' },
@@ -69,6 +70,7 @@ export const experiencesData = [
       'Used Figma features such as Grouping, Auto Layout, and Sections to support the interface design process.',
       'Designed a fried rice ordering interface using Figma as a final project.'
     ],
+    designUrl: 'https://www.figma.com/design/lcYYTcDznjaY1DEw53fgcI/DSF?node-id=0-1&t=ONPYiGKJXhZBsxXS-1',
     gallery: [
       { src: dsfScreenshot, caption: 'Design Showcase & Prototype Overview' }
     ]
@@ -109,6 +111,8 @@ export const projectsData = [
         description: 'Interactive visual feedback during asynchronous processes.'
       }
     ],
+    liveUrl: 'https://diskusify-app.vercel.app/',
+    githubUrl: 'https://github.com/driannxi/diskusify-app',
     thumbnail: diskusifyPreview,
     gallery: [
       { src: diskusifyPreview, caption: 'Diskusify Discussion Threads & Interface' }
@@ -167,6 +171,8 @@ export const projectsData = [
         description: 'Explores curated job listings and calculates relevance scores using ML models to recommend suitable jobs.'
       }
     ],
+    liveUrl: 'https://career-sync-app.vercel.app/',
+    githubUrl: 'https://github.com/driannxi/career-sync-app',
     thumbnail: csHomepage,
     gallery: [
       { src: csHomepage, caption: 'Homepage & Hero Overview' },
@@ -206,6 +212,7 @@ export const projectsData = [
         description: 'Apply with resume uploads, track application progress in real-time, and save favorite vacancies.'
       }
     ],
+    githubUrl: 'https://github.com/driannxi/openjob-api-v1',
     thumbnail: openjobPreview,
     gallery: [
       { src: openjobPreview, caption: 'API Architecture & Documentation Overview' }
@@ -241,6 +248,7 @@ export const projectsData = [
         description: 'Validates and modifies existing records or deletes books safely.'
       }
     ],
+    githubUrl: 'https://github.com/driannxi/bookshelf-api',
     thumbnail: bookshelfPreview,
     gallery: [
       { src: bookshelfPreview, caption: 'API Testing & Response Output' }
@@ -288,6 +296,7 @@ export const projectsData = [
         description: 'Filters notes by title or content in real time.'
       }
     ],
+    githubUrl: 'https://github.com/driannxi/dicoding-web-developer-journey/tree/main/my-personal-notes',
     thumbnail: notesV1Preview,
     gallery: [
       { src: notesV1Preview, caption: 'Personal Notes Interface & Note Management' }
@@ -319,6 +328,7 @@ export const projectsData = [
         description: 'Switch between dark and light themes across the application using React Context, with persistent storage in localStorage.'
       }
     ],
+    githubUrl: 'https://github.com/driannxi/dicoding-web-developer-journey/tree/main/personal-notes-app-starter',
     thumbnail: notesV2DarkMode,
     gallery: [
       { src: notesV2DarkMode, caption: 'Dark Mode View with Active Notes List' },
@@ -355,6 +365,7 @@ export const projectsData = [
         description: 'Automatically computes and displays 5 other tourist destinations with highest similarity scores on each destination page.'
       }
     ],
+    githubUrl: 'https://github.com/driannxi/sistemRekomendasiWisata',
     thumbnail: recSysScreenshot1,
     gallery: [
       { src: recSysScreenshot1, caption: 'Recommendation System Query Search & Destination Overview' },

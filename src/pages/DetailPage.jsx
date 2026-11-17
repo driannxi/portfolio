@@ -17,7 +17,7 @@ export default function DetailPage() {
           Data detail proyek atau pengalaman dengan ID "{id}" tidak tersedia.
         </p>
         <button
-          onClick={() => navigate('/')}
+          onClick={() => navigate('/#project')}
           className="px-6 py-2.5 rounded-full bg-white text-zinc-950 font-bold text-sm hover:bg-zinc-200 transition-all cursor-pointer"
         >
           Kembali ke Beranda
@@ -28,6 +28,11 @@ export default function DetailPage() {
 
   const isProject = item.type === 'project';
   const hasGallery = item.gallery && item.gallery.length > 0;
+  const backTarget = isProject ? '/#project' : '/#experience';
+
+  const handleBack = () => {
+    navigate(backTarget);
+  };
 
   return (
     <div className="min-h-screen bg-[#0e0e11] text-zinc-100 font-sans selection:bg-white selection:text-zinc-950 pb-24">
@@ -35,7 +40,7 @@ export default function DetailPage() {
       <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-[#0e0e11]/80 border-b border-white/10 px-6 py-4">
         <div className="max-w-5xl mx-auto flex items-center justify-between">
           <button
-            onClick={() => navigate('/')}
+            onClick={handleBack}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/8 hover:bg-white/15 border border-white/10 text-white text-xs sm:text-sm font-medium transition-all hover:-translate-x-0.5 active:scale-95 cursor-pointer"
           >
             <svg
@@ -51,7 +56,7 @@ export default function DetailPage() {
               <line x1="19" y1="12" x2="5" y2="12" />
               <polyline points="12 19 5 12 12 5" />
             </svg>
-            <span>Kembali ke Beranda</span>
+            <span>{isProject ? 'back to Projects' : 'back to Experiences'}</span>
           </button>
 
           <span className="text-xs uppercase tracking-widest font-semibold px-3 py-1 rounded-full bg-white/5 border border-white/10 text-zinc-400">
@@ -93,6 +98,106 @@ export default function DetailPage() {
           <p className="text-sm sm:text-base text-zinc-400 leading-relaxed max-w-3xl whitespace-pre-line">
             {item.overview}
           </p>
+
+          {/* Action Links (Live App / GitHub Repository / Program & Design Links) */}
+          {(item.liveUrl || item.githubUrl || item.programUrl || item.designUrl) && (
+            <div className="flex flex-wrap items-center gap-3 pt-2">
+              {item.programUrl && (
+                <a
+                  href={item.programUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 font-bold text-xs sm:text-sm hover:bg-zinc-200 shadow-md hover:-translate-y-0.5 active:scale-95 transition-all cursor-pointer"
+                >
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  <span>View Program</span>
+                </a>
+              )}
+
+              {item.designUrl && (
+                <a
+                  href={item.designUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#0acf83]/15 hover:bg-[#0acf83]/25 border border-[#0acf83]/30 text-emerald-300 font-semibold text-xs sm:text-sm shadow-sm hover:-translate-y-0.5 active:scale-95 transition-all cursor-pointer"
+                >
+                  <svg
+                    className="w-4 h-4"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z" />
+                    <path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z" />
+                    <path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z" />
+                    <path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z" />
+                    <path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z" />
+                  </svg>
+                  <span>View Design</span>
+                </a>
+              )}
+
+              {item.liveUrl && (
+                <a
+                  href={item.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-zinc-950 font-bold text-xs sm:text-sm hover:bg-zinc-200 shadow-md hover:-translate-y-0.5 active:scale-95 transition-all cursor-pointer"
+                >
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                  </svg>
+                  <span>Open Live App</span>
+                </a>
+              )}
+
+              {item.githubUrl && (
+                <a
+                  href={item.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 border border-white/15 text-white font-semibold text-xs sm:text-sm shadow-sm hover:-translate-y-0.5 active:scale-95 transition-all cursor-pointer"
+                >
+                  <svg
+                    className="w-4 h-4 fill-current shrink-0"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                    />
+                  </svg>
+                  <span>View Repository</span>
+                </a>
+              )}
+            </div>
+          )}
         </motion.div>
 
         {/* Gallery / Screenshot Showcase */}
@@ -225,10 +330,10 @@ export default function DetailPage() {
         {/* Bottom Back Button */}
         <div className="pt-8 border-t border-white/10 flex justify-center">
           <button
-            onClick={() => navigate('/')}
+            onClick={handleBack}
             className="px-6 py-3 rounded-full bg-white text-zinc-950 font-bold text-sm hover:bg-zinc-200 transition-all shadow-xl hover:-translate-y-0.5 active:scale-95 cursor-pointer"
           >
-            ← Kembali ke Beranda
+            ← {isProject ? 'Kembali ke Projects' : 'Kembali ke Experiences'}
           </button>
         </div>
       </main>
