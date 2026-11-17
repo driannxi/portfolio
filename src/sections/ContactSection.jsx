@@ -6,7 +6,7 @@ export default function ContactSection() {
   return (
     <section
       id="contact"
-      className="relative min-h-[100svh] flex items-center justify-center bg-white px-6 py-24"
+      className="relative w-full overflow-hidden min-h-[100svh] flex items-center justify-center bg-white px-6 py-24"
     >
       <motion.div
         initial={{ opacity: 0, y: 60 }}

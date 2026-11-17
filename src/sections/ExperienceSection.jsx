@@ -7,7 +7,7 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="relative min-h-[100svh] flex items-center justify-center bg-[#141416] text-white px-6 py-24"
+      className="relative w-full overflow-hidden min-h-[100svh] flex items-center justify-center bg-[#141416] text-white px-6 py-24"
     >
       <div className="w-full max-w-[860px] mx-auto flex flex-col">
         <SectionHeading watermark="EXPERIENCE" title="EXPERIENCE" theme="dark" />

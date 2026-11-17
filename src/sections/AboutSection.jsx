@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative min-h-[100svh] flex items-center justify-center bg-[#141416] text-white px-6 py-24"
+      className="relative w-full overflow-hidden min-h-[100svh] flex items-center justify-center bg-[#141416] text-white px-6 py-24"
     >
       <motion.div
         initial={{ opacity: 0, y: 60 }}

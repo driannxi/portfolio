@@ -7,7 +7,7 @@ export default function ProjectSection() {
   return (
     <section
       id="project"
-      className="relative min-h-[100svh] flex flex-col items-center justify-center bg-[#fafafa] pt-28 pb-20 px-5 sm:px-8"
+      className="relative w-full overflow-hidden min-h-[100svh] flex flex-col items-center justify-center bg-[#fafafa] pt-28 pb-20 px-5 sm:px-8"
     >
       <div className="w-full max-w-[880px] mx-auto flex flex-col items-center">
         <SectionHeading watermark="PORTFOLIO" title="SELECTED PROJECTS" theme="light" />

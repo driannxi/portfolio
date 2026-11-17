@@ -8,7 +8,7 @@ import ContactSection from '../sections/ContactSection';
 
 export default function Homepage() {
   return (
-    <div className="min-h-screen bg-white text-zinc-900 font-sans selection:bg-zinc-900 selection:text-white">
+    <div className="w-full max-w-full overflow-x-hidden min-h-screen bg-white text-zinc-900 font-sans selection:bg-zinc-900 selection:text-white">
       <HeroSection />
       <AboutSection />
       <StackSection />

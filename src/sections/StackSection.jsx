@@ -30,7 +30,7 @@ export default function StackSection() {
   return (
     <section
       id="stack"
-      className="relative min-h-[100svh] flex items-center justify-center bg-[#fafafa] px-5 sm:px-8 py-24"
+      className="relative w-full overflow-hidden min-h-[100svh] flex items-center justify-center bg-[#fafafa] px-5 sm:px-8 py-24"
     >
       <div className="w-full max-w-[1060px] mx-auto flex flex-col items-center justify-center">
         <SectionHeading watermark="TECH STACK" title="TECH STACK" theme="light" />
