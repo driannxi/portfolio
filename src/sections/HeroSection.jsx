@@ -112,20 +112,26 @@ export default function HeroSection() {
 
             {/* Email */}
             <a
-              href="mailto:contact@example.com"
+              href="https://drive.google.com/file/d/1dcMCQh6MH8SOKHJ2YqXSqeCGC_7kufyh/view?usp=drive_link"
               className="flex items-center justify-center gap-1.5 py-3 px-2 bg-white border border-zinc-200/90 rounded-2xl shadow-[0_4px_20px_-2px_rgba(0,0,0,0.06)] hover:border-zinc-300 hover:bg-zinc-50 active:scale-[0.97] transition-all duration-150 text-zinc-900 group"
             >
               <svg
-                className="w-4 h-4 fill-none stroke-current stroke-[2] shrink-0 text-zinc-800 group-hover:text-zinc-950"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className="text-xs font-semibold text-zinc-800 tracking-tight">Email</span>
+                   viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-4 h-4"
+              aria-hidden="true"
+            >
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" x2="8" y1="13" y2="13" />
+              <line x1="16" x2="8" y1="17" y2="17" />
+              <line x1="10" x2="8" y1="9" y2="9" />
+                </svg>
+              <span className="text-xs font-semibold text-zinc-800 tracking-tight">Resume</span>
             </a>
           </div>
         </motion.div>
@@ -271,23 +277,26 @@ export default function HeroSection() {
 
             <li>
               <a
-                href="https://docs.google.com/document/d/1KQB6QUbR92ykpj9UAWt0lvwgEmoOuMmf8088nQTS_tE/edit?usp=sharing"
+                href="https://drive.google.com/file/d/1dcMCQh6MH8SOKHJ2YqXSqeCGC_7kufyh/view?usp=drive_link"
                 className="flex items-center gap-[0.75em] w-[13.3em] h-[3.08em] px-[1.2em] rounded-full bg-white text-[0.93em] font-medium text-[var(--ink)] shadow-[0_6px_24px_rgba(0,0,0,0.08),0_0_0_1px_rgba(0,0,0,0.03)] hover:-translate-x-1 active:scale-95 transition-transform duration-200"
               >
                 <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-[1.15em] h-[1.15em] shrink-0"
-                  aria-hidden="true"
-                >
-                  <rect width="20" height="16" x="2" y="4" rx="2" />
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                   viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="w-4 h-4"
+              aria-hidden="true"
+            >
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+              <polyline points="14 2 14 8 20 8" />
+              <line x1="16" x2="8" y1="13" y2="13" />
+              <line x1="16" x2="8" y1="17" y2="17" />
+              <line x1="10" x2="8" y1="9" y2="9" />
                 </svg>
-                <span>Email</span>
+                <span>Resume</span>
               </a>
             </li>
           </motion.ul>
